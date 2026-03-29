@@ -34,7 +34,7 @@ with col1:
 with col2:
     st.markdown("### SECOND CHART")
     fig2 = plt.figure()
-    sns.histplot(data=df, y='age')
+    sns.histplot(data=df, x='age')
     st.pyplot(fig2)
 
 st.markdown("### DETAILED DATA VIEW")
