@@ -22,7 +22,7 @@ kpi1, kpi2, kpi3 = st.columns(3)
 
 kpi1.metric(label="Age", value=round(avg_age), delta=round(avg_age))
 kpi2.metric(label="Married Count", value=int(count_married), delta=round(count_married))
-kpi3.metric(label="Balance $", value=f'$ (round(balance,2))', delta=round(balance/count_married)*100)
+kpi3.metric(label="Balance $", value=f"${round(balance,2)}", delta=round(balance/count_married)*100)
 
 # Graphiques
 col1, col2 = st.columns(2)
